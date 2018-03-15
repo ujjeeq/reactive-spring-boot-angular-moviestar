@@ -5,7 +5,7 @@ This example app shows how to build a basic reactive full stack app with Spring 
 **Prerequisites:** [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and [Node.js](https://nodejs.org/).
 
 * [Getting Started](#getting-started)
-* [Technologies Used](#Techologies-used)
+* [Technologies Used](#technologies_used)
 * [License](#license)
 
 ## Getting Started
