@@ -2,7 +2,7 @@
 This example app shows how to build a basic reactive full stack app with Spring Boot 2.0, Spring Data, and Angular 5.0.
 
 
-**Prerequisites:** [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and [Node.js](https://nodejs.org/).
+**Prerequisites:** [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (Kotlin TargetJVM 1.8) and [Node.js](https://nodejs.org/).
 
 * [Getting Started](#getting-started)
 * [Technologies Used](#technologies-used)
