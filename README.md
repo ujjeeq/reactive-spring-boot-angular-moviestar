@@ -39,7 +39,7 @@ then to check the FrontEnd on `//localhost:4200`.
 ## Technologies Used
 
  - Language: [Kotlin](https://kotlin.link/) and  [TypeScript](https://www.typescriptlang.org/) 
- - Framework: [Spring Boot 2.0](https://projects.spring.io/spring-boot/) with [Spring 5 Kotlin support](https://docs.spring.io/spring-framework/docs/5.0.x/spring-framework-reference/kotlin.html) and [Spring WebFlux functional](https://docs.spring.io/spring-framework/docs/5.0.x/spring-framework-reference/reactive-web.html)
+ - Framework: [Spring Boot 2.0](https://projects.spring.io/spring-boot/) with [Spring 5 Kotlin support](https://docs.spring.io/spring/docs/current/spring-framework-reference/languages.html#kotlin) and [Spring WebFlux functional](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html#webflux-fn)
  - Engine: [Netty](http://netty.io/) used for client and server
  - FrontEnd: [Angular](https://angular.io/) 
  - Reactive API: [Reactor](http://projectreactor.io/)
