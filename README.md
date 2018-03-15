@@ -1,9 +1,9 @@
 # reactive-spring-boot-angular-moviestar
 This example app shows how to build a basic non-blocking reactive full stack app with Spring Boot 2.0, Spring Data, and Angular 5.0.
 
-The server(Backend) part provide two REST APIs, `/stars` and `/stars/{id}`, that return data from a reactive MongoDB database. And accessing all other actuator endpoints(eg. `/actuator/info`, `/actuator/env`) requires authorization which is empowered by Spring Security(usernmae,passwords are configured in `applicatoin.properties`).  
+The server(Backend) part provide two REST APIs, `/stars` and `/stars/{id}`, that return data from a reactive MongoDB database. And accessing all other actuator endpoints(eg. `/actuator/info`, `/actuator/env`) requires authorization which is empowered by Spring Security(usernmae,passwords are configured in `applicatoin.properties`).The programming language for backend is using Kotlin. And it brings with a [Kotlin routing DSL](https://docs.spring.io/spring-framework/docs/5.0.4.RELEASE/kdoc-api/spring-framework/org.springframework.web.reactive.function.server/-router-function-dsl/) that allows one to leverage the [WebFlux functional API](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html#webflux-fn) for writing clean and idiomatic code. 
 
-The client(Frontend) part is using Angular 5 to present the data list from REST API and provied operation on them. And also add function to retrieve movie star images from  [TMDB](https://www.themoviedb.org/documentation/api?language=en).
+The client(Frontend) part is using Angular 5 to present the data list from REST API and provied operation on them. And also add function to retrieve movie star images from a public open movie and TV database [TMDB](https://www.themoviedb.org/documentation/api?language=en).
 
 **Prerequisites:** [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (Kotlin TargetJVM 1.8) and [Node.js](https://nodejs.org/).
 
