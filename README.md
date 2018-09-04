@@ -1,7 +1,7 @@
 # reactive-spring-boot-angular-moviestar
 This example app shows how to build a basic non-blocking reactive full stack app with Spring Boot 2.0, Spring Data, and Angular 5.0.
 
-The server(Backend) part provides two REST APIs, `/stars` and `/stars/{id}` that return data from a reactive MongoDB database. And accessing all other actuator endpoints(eg. `/actuator/info`, `/actuator/env`) requires authorization which is empowered by Spring Security(usernmae,passwords are configured in `applicatoin.properties`).The programming language for backend is using Kotlin. And it brings with a [Kotlin routing DSL](https://docs.spring.io/spring-framework/docs/5.0.4.RELEASE/kdoc-api/spring-framework/org.springframework.web.reactive.function.server/-router-function-dsl/) that allows one to leverage the [WebFlux functional API](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html#webflux-fn) for writing clean and idiomatic code. 
+The server(Backend) part provides two REST APIs, `/stars` and `/stars/{id}` that return data from a reactive MongoDB database. And accessing all other actuator endpoints(eg. `/actuator/info`, `/actuator/env`) requires authorization which is empowered by Spring Security(usernmae,passwords are configured in [application.properties](src/main/resources/application.properties)).The programming language for backend is using Kotlin. And it brings with a [Kotlin routing DSL](https://docs.spring.io/spring-framework/docs/5.0.4.RELEASE/kdoc-api/spring-framework/org.springframework.web.reactive.function.server/-router-function-dsl/) that allows one to leverage the [WebFlux functional API](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html#webflux-fn) for writing clean and idiomatic code. 
 
 The client(Frontend) part is using Angular 5 to present the data list from REST API and provied operation on them. And also add function to retrieve movie star images from a public open movie and TV database [TMDB](https://www.themoviedb.org/documentation/api?language=en).
 
@@ -27,14 +27,20 @@ To run the server, directly run:
 ```bash
 ./gradlew bootRun
 ```
-then to reach the REST APIs on `//localhost:8080`.
+then to reach the REST APIs on `http://localhost:8080/stars `;
+
+And with username/password set in [application.properties](src/main/resources/application.properties), it is possible to access actuator endpoints, like:
+```bash
+ curl -u abc:abc123 http://localhost:8080/actuator/info
+```
+or by using browsers.
 
 To run the client, cd into the `client` folder and run:
  
 ```bash
 npm install && npm start
 ```
-then to check the FrontEnd on `//localhost:4200`.
+then to check the FrontEnd on `http://localhost:4200/ `.
 
 ## Technologies Used
 
