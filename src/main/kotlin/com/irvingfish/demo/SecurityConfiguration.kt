@@ -18,6 +18,7 @@ class SecurityConfiguration {
                     .anyExchange().permitAll().and()
                     .formLogin().and()
                     .httpBasic().and()
+                .csrf().disable()
                 .build()
 
     }
