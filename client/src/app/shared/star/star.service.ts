@@ -6,24 +6,24 @@ import {Observable} from "rxjs/Observable";
 export class StarService {
 
   public API = '//localhost:8080';
-  public CAR_API = this.API + '/cars';
+  public STAR_API = this.API + '/stars';
 
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<any> {
-    return this.http.get(this.API + '/stars');
+    return this.http.get(this.STAR_API);
   }
 
   get(id: string) {
-    return this.http.get(this.CAR_API + '/' + id);
+    return this.http.get(this.STAR_API + '/' + id);
   }
 
-  save(car: any): Observable<any> {
+  save(star: any): Observable<any> {
     let result: Observable<Object>;
-    if (car['href']) {
-      result = this.http.put(car.href, car);
+    if (star['href']) {
+      result = this.http.put(star.href, star);
     } else {
-      result = this.http.post(this.CAR_API, car);
+      result = this.http.post(this.STAR_API, star);
     }
     return result;
   }
