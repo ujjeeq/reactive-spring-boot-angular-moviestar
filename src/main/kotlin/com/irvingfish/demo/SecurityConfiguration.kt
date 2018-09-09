@@ -18,7 +18,8 @@ class SecurityConfiguration {
                     .anyExchange().permitAll().and()
                     .formLogin().and()
                     .httpBasic().and()
-                .csrf().disable()
+                    .oauth2Login().and()
+                    .csrf().disable()
                 .build()
 
     }

@@ -1,7 +1,7 @@
 buildscript {
 	ext {
-		kotlinVersion = '1.2.51'
-		springBootVersion = '2.0.4.RELEASE'
+		kotlinVersion = '1.2.61'
+		springBootVersion = '2.1.0.M2'
 	}
 	repositories {
 		mavenCentral()
@@ -44,6 +44,10 @@ dependencies {
 	//compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 	compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.boot:spring-boot-starter-actuator')
+    //compile('org.springframework.boot:spring-security-oauth2-autoconfigure')
+	//compile('org.springframework.security:spring-security-config')
+    compile('org.springframework.security:spring-security-oauth2-client')
+	compile('org.springframework.security:spring-security-oauth2-jose')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	compile("org.jetbrains.kotlin:kotlin-reflect")
     compile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
