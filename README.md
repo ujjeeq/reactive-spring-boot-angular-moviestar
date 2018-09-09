@@ -35,6 +35,8 @@ And with username/password set in [application.properties](src/main/resources/ap
 ```
 or by using browsers.
 
+Also there is social Oauth 2.0 login function to access those endpoint.
+
 To run the client, cd into the `client` folder and run:
  
 ```bash
