@@ -1,0 +1,22 @@
+[
+  {
+    "registrationId":"client1",
+    "scope":"",
+    "clientId":"aaa",
+    "clientSecret":"",
+    "redirectUriTemplate":"",
+    "grandType":"",
+    "clientName":"",
+    "clientAuthenticationMethod":""
+  },
+  {
+    "registrationId":"",
+    "scope":"",
+    "clientId":"bbb",
+    "clientSecret":"",
+    "redirectUriTemplate":"",
+    "grandType":"",
+    "clientName":"",
+    "clientAuthenticationMethod":""
+  }
+]

@@ -1,0 +1,7 @@
+package com.irvingfish.demo.repository
+
+import org.springframework.data.mongodb.repository.ReactiveMongoRepository
+import org.springframework.security.oauth2.client.registration.ClientRegistration
+import org.springframework.security.oauth2.client.registration.ReactiveClientRegistrationRepository
+
+interface ReactiveClientRegistrationMongoRepository : ReactiveClientRegistrationRepository, ReactiveMongoRepository<ClientRegistration, String>
