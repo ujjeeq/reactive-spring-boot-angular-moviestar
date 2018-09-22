@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: reactive-moviestar
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: reactive-moviestar
+    spec:
+      containers:
+      - name: reactive-moviestar
+        image: registry.gitlab.com/irvingfish/reactive-moviestar
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: registry.gitlab.com
